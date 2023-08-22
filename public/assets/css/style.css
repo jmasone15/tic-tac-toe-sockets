@@ -22,10 +22,26 @@ main {
 }
 
 .col {
-    border: solid 1px red;
+    border: solid 1px black;
     font-size: clamp(100px, 15vw, 200px);
     padding: min(1vw, 10px) min(5vw, 60px);
     user-select: none;
+}
+
+.top {
+    border-top-width: 0
+}
+
+.left {
+    border-left-width: 0
+}
+
+.right {
+    border-right-width: 0
+}
+
+.bottom {
+    border-bottom-width: 0
 }
 
 .hide {
@@ -33,13 +49,19 @@ main {
 }
 
 .green {
-    background-color: lightgreen;
-    color: white;
+    color: lightgreen;
 }
 
 .red {
-    background-color: indianred;
-    color: white;
+    color: indianred;
+}
+
+.selectable {
+    cursor: pointer;
+}
+
+.selectable:hover {
+    background-color: lightgray;
 }
 
 @media screen and (min-width: 1200px) {

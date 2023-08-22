@@ -2,33 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>tic tac patty wack</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
-<h1>You are: X</h1>
+<h1 id="userRole"></h1>
 
 <main>
     <div class="row">
-        <div class="col green">X</div>
-        <div class="col hide">A</div>
-        <div class="col hide">A</div>
+        <div class="col selectable hide top left" data-num="1">A</div>
+        <div class="col selectable hide top" data-num="2">A</div>
+        <div class="col selectable hide top right" data-num="3">A</div>
     </div>
     <div class="row">
-        <div class="col red">O</div>
-        <div class="col hide">A</div>
-        <div class="col hide">A</div>
+        <div class="col selectable hide left" data-num="4">A</div>
+        <div class="col selectable hide" data-num="5">A</div>
+        <div class="col selectable hide right" data-num="6">A</div>
     </div>
     <div class="row">
-        <div class="col hide">A</div>
-        <div class="col hide">A</div>
-        <div class="col hide">A</div>
+        <div class="col selectable hide left bottom" data-num="7">A</div>
+        <div class="col selectable hide bottom" data-num="8">A</div>
+        <div class="col selectable hide right bottom" data-num="9">A</div>
     </div>
 </main>
 
 
-<!--<script src="/socket.io/socket.io.js"></script>-->
+<script src="/socket.io/socket.io.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>
 </html>
