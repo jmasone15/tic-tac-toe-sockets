@@ -34,6 +34,12 @@ io.on("connection", (socket) => {
         gameArray[index] = letter;
         socket.broadcast.emit("update", index, letter);
     });
+
+    socket.on("disconnect", () => {
+       gameArray = ["", "", "", "", "", "", "", "", ""];
+       userCount--
+       socket.broadcast.emit("end")
+    });
 });
 
 server.listen(PORT, () => console.log(`⚡️ [server]: Server Listening at: http://localhost:${PORT}`));
